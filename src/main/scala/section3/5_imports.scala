@@ -16,14 +16,14 @@ import java.lang.Math._
 import java.util.{List => JavaList}
 
 class Imports {
-  val list = new ArrayList()
+  val list: JavaList[String] = new ArrayList[String]()
   help1()
 
   def randomString = Base64.getEncoder.encode(new Random().nextInt().toString.getBytes())
 
   abs(-5)
 
-  val jList: JavaList = list
+  val jList: JavaList[String] = list
 
 }
 
